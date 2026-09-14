@@ -967,6 +967,7 @@ Define the degree matrix
 $$
 D_{ii} = \sum_{j=1}^{N}W_{ij}.
 $$
+
 ### 8.2. Graph Laplacians
 
 The unnormalized graph Laplacian is $L=D-W$.
