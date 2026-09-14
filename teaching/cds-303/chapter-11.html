@@ -430,6 +430,7 @@ window.Quarto = {
   <li><a href="#spectral-clustering" id="toc-spectral-clustering" class="nav-link" data-scroll-target="#spectral-clustering">8. Spectral Clustering</a>
   <ul class="collapse">
   <li><a href="#from-data-points-to-a-similarity-graph" id="toc-from-data-points-to-a-similarity-graph" class="nav-link" data-scroll-target="#from-data-points-to-a-similarity-graph">8.1. From Data Points to a Similarity Graph</a></li>
+  <li><a href="#graph-laplacians" id="toc-graph-laplacians" class="nav-link" data-scroll-target="#graph-laplacians">8.2. Graph Laplacians</a></li>
   <li><a href="#normalized-cut" id="toc-normalized-cut" class="nav-link" data-scroll-target="#normalized-cut">8.3. Normalized Cut</a></li>
   <li><a href="#spectral-clustering-algorithm" id="toc-spectral-clustering-algorithm" class="nav-link" data-scroll-target="#spectral-clustering-algorithm">8.4. Spectral Clustering Algorithm</a></li>
   </ul></li>
@@ -1349,7 +1350,10 @@ W_{ij}&gt;0 \quad\text{if}\quad d(x_i,x_j)\leq\varepsilon.
 <p>Define the degree matrix</p>
 <p><span class="math display">\[
 D_{ii} = \sum_{j=1}^{N}W_{ij}.
-\]</span> ### 8.2. Graph Laplacians</p>
+\]</span></p>
+</section>
+<section id="graph-laplacians" class="level3">
+<h3 class="anchored" data-anchor-id="graph-laplacians">8.2. Graph Laplacians</h3>
 <p>The unnormalized graph Laplacian is <span class="math inline">\(L=D-W\)</span>.</p>
 <p>Two normalized forms are</p>
 <p><span class="math display">\[
@@ -1726,7 +1730,7 @@ NMI(C,Y) = \frac{I(C;Y)} {\sqrt{H(C)H(Y)}},
 </section>
 <section id="example-chemical-profiles-in-the-wine-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="example-chemical-profiles-in-the-wine-dataset">17. Example: Chemical Profiles in the Wine Dataset</h2>
-<div id="1fa82cb4" class="cell" data-execution_count="1">
+<div id="282574bf" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1915,42 +1919,42 @@ NMI(C,Y) = \frac{I(C;Y)} {\sqrt{H(C)H(Y)}},
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-2-output-1.png" width="950" height="469" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-2-output-1.png" width="951" height="479" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-2-output-2.png" width="758" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-2-output-2.png" width="760" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-2-output-3.png" width="758" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-2-output-3.png" width="760" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-2-output-4.png" width="758" height="566" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-2-output-4.png" width="759" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-2-output-5.png" width="758" height="566" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-2-output-5.png" width="759" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-2-output-6.png" width="1055" height="469" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-2-output-6.png" width="1060" height="479" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1967,7 +1971,7 @@ Adjusted Rand Index: 0.8974949815093207</code></pre>
 </section>
 <section id="example-hierarchical-structure-in-wine-chemistry" class="level2">
 <h2 class="anchored" data-anchor-id="example-hierarchical-structure-in-wine-chemistry">18. Example: Hierarchical Structure in Wine Chemistry</h2>
-<div id="c9c081e6" class="cell" data-execution_count="2">
+<div id="3e03613f" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -2013,28 +2017,28 @@ Adjusted Rand Index: 0.8974949815093207</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-3-output-1.png" width="1142" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-3-output-1.png" width="1143" height="472" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-3-output-2.png" width="1142" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-3-output-2.png" width="1143" height="472" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-3-output-3.png" width="1142" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-3-output-3.png" width="1142" height="472" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-3-output-4.png" width="1142" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-3-output-4.png" width="1143" height="472" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2042,7 +2046,7 @@ Adjusted Rand Index: 0.8974949815093207</code></pre>
 </section>
 <section id="example-hard-and-soft-clustering" class="level2">
 <h2 class="anchored" data-anchor-id="example-hard-and-soft-clustering">19. Example: Hard and Soft Clustering</h2>
-<div id="59317935" class="cell" data-execution_count="3">
+<div id="403d7f56" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -2177,21 +2181,21 @@ Adjusted Rand Index: 0.8974949815093207</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-4-output-1.png" width="758" height="566" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-4-output-1.png" width="759" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-4-output-2.png" width="728" height="566" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-4-output-2.png" width="730" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-4-output-3.png" width="758" height="566" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-4-output-3.png" width="759" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2213,7 +2217,7 @@ x_n=(R_n,G_n,B_n)^\top\in\mathbb R^3.
 \sum_{n=1}^{N} \|x_n-\mu_{z_n}\|^2.
 \]</span></p>
 <p>This is both clustering and lossy compression.</p>
-<div id="0c23affd" class="cell" data-execution_count="4">
+<div id="42fb0497" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -2341,7 +2345,7 @@ x_n=(R_n,G_n,B_n)^\top\in\mathbb R^3.
 x_n\in\mathbb R^{64}.
 \]</span></p>
 <p>The clustering algorithm receives only pixel intensities. True digit labels are used afterward to inspect alignment.</p>
-<div id="91802ff5" class="cell" data-execution_count="5">
+<div id="706ffab7" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -2499,7 +2503,7 @@ x_n\in\mathbb R^{64}.
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-6-output-1.png" width="854" height="662" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-6-output-1.png" width="856" height="662" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2513,12 +2517,12 @@ x_n\in\mathbb R^{64}.
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-6-output-3.png" width="815" height="566" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-6-output-3.png" width="819" height="566" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Silhouette: 0.17271895397874232
+<pre><code>Silhouette: 0.17271895397874237
 Adjusted Rand Index: 0.4646456035374872
 Normalized Mutual Information: 0.6228507417700094</code></pre>
 </div>
@@ -2526,7 +2530,7 @@ Normalized Mutual Information: 0.6228507417700094</code></pre>
 </section>
 <section id="comparing-algorithms-on-nonconvex-structure" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-algorithms-on-nonconvex-structure">22. Comparing Algorithms on Nonconvex Structure</h2>
-<div id="2c3bc9c2" class="cell" data-execution_count="6">
+<div id="935e24be" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -2596,35 +2600,35 @@ Normalized Mutual Information: 0.6228507417700094</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-7-output-1.png" width="566" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-7-output-1.png" width="568" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-7-output-2.png" width="566" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-7-output-2.png" width="568" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-7-output-3.png" width="566" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-7-output-3.png" width="568" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-7-output-4.png" width="566" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-7-output-4.png" width="568" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="chapter-11_files/figure-html/cell-7-output-5.png" width="566" height="470" class="figure-img"></p>
+<p><img src="chapter-11_files/figure-html/cell-7-output-5.png" width="568" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
