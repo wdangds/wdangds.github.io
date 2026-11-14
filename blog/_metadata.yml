@@ -2,3 +2,7 @@ execute:
   warning: false
   message: false
   freeze: auto
+
+# Shared bibliography for every post in this folder.
+bibliography: references.bib
+link-citations: true
